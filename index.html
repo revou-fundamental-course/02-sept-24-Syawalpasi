@@ -5,10 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KALKULATOR PENGHITUNG RUMUS SEGITIGA</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ini header -->
+    <header class="main-header">
+        <h1>Welcome to Katik</h1>
+        <p><h3>Hai Sobat Selamat Datang di Katik :)</h3></p>
+        <p>Sebuah web sederhana untuk menghitung Luas dan keliling dari bangun datar</p>
+    </header>
+    <div class="judul-segitiga"> <button class="tombol-segitiga"> Segitiga</button></div>
+    <div class="judul-jajargenjang"><button class="tombol-jajargenjang">Jajargenjang</button></div>
+    <!-- akhir header -->
+    
 
+    <!-- awal main -->
+    <main class="container">
+        <!-- Section Luas Segitiga -->
+        <section class="section">
+            <header>
+                <div class="nama-perhitungan"><h2>LUAS SEGITIGA</h2></div>
+                <img src="https://i2.wp.com/cilacapklik.com/wp-content/uploads/2022/07/Rumus-Segitiga-Sama-Kaki.png" alt="Gambar Luas Segitiga" class="header-image">
+                <p class="penjelasan">Rumus Luas Segitiga yaitu : </p>
+                <b>L = 1/2 + a x t </b>
+                <div class="penjelasan">
+                    <P>Di mana :</P>
+                    <p>L = Luas</p> 
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                </div>
+                <hr>
+                <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+            </header>
+            <form id="luas-segitiga-form">
+                <div class="input-wrapper">
+                    <label for="panjang-alas">Panjang Alas :</label>
+                    <input id="panjang-alas" type="number" required/>
+                </div>
 
+                <div class="input-wrapper">
+                    <label for="tinggi">Tinggi :</label>
+                    <input id="tinggi" type="number" required/>
+                </div>
+                <p id="result-luas">Hasil Perhitungan:</p>
+                <div id="steps-luas" class="steps"></div>
+                
+                <div class="button">
+                    <button type="submit" class="button-submit">Hitung</button>
+                    <button type="button" id="reset-luas">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section Keliling Segitiga -->
+        <section class="section">
+            <header>
+                <div class="nama-perhitungan"><h2>KELILING SEGITIGA</h2></div>
+                <img src="https://i2.wp.com/cilacapklik.com/wp-content/uploads/2022/07/Rumus-Segitiga-Sama-Kaki.png" alt="Gambar Keliling Segitiga" class="header-image">
+                <p class="penjelasan" >Rumus Keliling Segitiga yaitu : </p>
+                <b>K= S1 + S2 + S3 </b>
+                <div class="penjelasan">
+                    <P>Di mana :</P>
+                    <p>K = Keliling</p> 
+                    <p>S1 = Sisi A</p>
+                    <p>S2 = Sisi B</p>
+                    <p>S3 = Sisi C</p>
+                </div>
+                <hr>
+                <h1 class="keliling-segitiga-form-header">Hitung Keliling Segitiga</h1>
+            </header>
+            <form id="keliling-segitiga-form">
+                <div class="input-wrapper">
+                    <label for="sisi-a">Sisi A :</label>
+                    <input id="sisi-a" type="number" required/>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="sisi-b">Sisi B :</label>
+                    <input id="sisi-b" type="number" required/>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="sisi-c">Sisi C :</label>
+                    <input id="sisi-c" type="number" required/>
+                </div>
+                <p id="result-keliling">Hasil Perhitungan:</p>
+                <div id="steps-keliling" class="steps"></div>
+                
+                <div class="button-group">
+                    <button type="submit" class="button-submit">Hitung</button>
+                    <button type="button" id="reset-keliling">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- akhir main -->
+
+    <footer class="footer">
+        <hr>
+        <h6>Web sederhana menghitung Luas dan Keliling by : SYAWAL PASI</h6>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
